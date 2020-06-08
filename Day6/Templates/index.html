@@ -1,0 +1,23 @@
+<html> 
+<head>
+    <title> Prediction Using Flask</title>
+        </head>
+<body> 
+    <h3 style="text-align:center;">Purchase Prediction Form (Using Decision Tree Classifier Algorithm)</h3> 
+  
+<div> 
+  <form action="{{ url_for('predict')}}"method="post">
+    <label for="age">Age</label> 
+    <input type="number" placeholder="1.0" name="wt"> 
+    <br>
+     <label for="age">Estimated Salary</label> 
+    <input type="number" name="len1"> 
+    <br>
+    
+    <br>
+     <input type="submit" value="Submit"> 
+	  <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
